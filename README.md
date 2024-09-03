@@ -35,6 +35,7 @@ This repository contains a Telegram bot designed to perform DDoS attacks. The bo
    pip install flask
    pip install aiogram
    pip install python-telegram-bot
+   pip install pymongo aiohttp telebot
    ```
 
 ### Configuration
@@ -69,29 +70,17 @@ This repository contains a Telegram bot designed to perform DDoS attacks. The bo
 ### User Commands
 
 - `/start` - Welcome message.
-- `/help` - Display help information and available commands.
-- `/bgmi <target> <port> <time>` - Initiate a DDoS attack on the specified target.
-- `/rules` - Display rules for using the bot.
-- `/plan` - Display available plans and pricing.
-- `/mylogs` - Show recent command logs for the user.
-- `/myinfo` - Display user's information and approval status.
-
+- `/approve` -
+- 
 ### Admin Commands
 
-- `/add <userId> <duration>` - Add a user with a specified approval duration.
-- `/remove <userId>` - Remove a user from the authorized list.
-- `/allusers` - Display all authorized users.
-- `/logs` - Display logs of all commands executed by users.
-- `/clearlogs` - Clear the command logs.
-- `/clearusers` - Clear the list of authorized users.
-- `/broadcast <message>` - Send a broadcast message to all authorized users.
+- Send a broadcast message to all authorized users.
 
 ## File Structure
 
-- `ddos_bot.py` - Main bot script containing all functionalities.
+- `venom.py` - Main bot script containing all functionalities.
 - `users.txt` - File to store allowed user IDs.
-- `log.txt` - File to store command logs.
-- `keep_alive.py` - Script to keep the bot running (e.g., for use with Repl.it).
+- `install.sh` - Script to keep the bot running (e.g., for use with Repl.it).
 
 ## Logging
 
@@ -111,7 +100,7 @@ This bot is intended for educational purposes only. The misuse of this bot may r
 
 ---
 
-**Note**: Replace `YOUR_BOT_TOKEN` and `YOUR_ADMIN_ID` with your actual bot token and admin user ID before running the bot. Ensure that you comply with all legal regulations and use this bot responsibly.
+**Note**: Replace `YOUR_BOT_TOKEN` and `YOUR_ADMIN_ID` `GROUP_ID`with your actual bot token and admin user ID before running the bot. Ensure that you comply with all legal regulations and use this bot responsibly.
 
 ## Contributing
 
